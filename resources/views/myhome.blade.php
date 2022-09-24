@@ -82,6 +82,8 @@
 
 
                 <div class="row">
+                
+                @if($allprojects)
                  @foreach ($allprojects as $project)
 
 
@@ -130,6 +132,7 @@
                       </div>
 
                     @endforeach
+                    @endif
                     <div class="d-flex justify-content-center mt-5">
                         <a href="{{route('projects.index')}}" class="btn rounded-pill main-btn pt-3 text-uppercase">i want more</a>
                     </div>
